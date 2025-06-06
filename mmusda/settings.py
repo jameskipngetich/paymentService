@@ -118,3 +118,9 @@ CORS_ALLOW_ALL_ORIGINS = True  # Only for development
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGOUT_REDIRECT_URL = 'home' 
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://paymentservice-1.onrender.com"
+]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
