@@ -83,8 +83,9 @@ WSGI_APPLICATION = 'mmusda.wsgi.application'
     }
 }
 """
+DATABASE_URL = os.environ.get('DATABASE_URL')
 DATABASES = {
-    'default':dj_database_url.parse("postgresql://projectmanager:uhmAMMHqdwSf3JMnpw1vEA8otAQNbiKE@dpg-d11d5dh5pdvs73escjr0-a.oregon-postgres.render.com/mmusdapaymentsystem")
+    'default':dj_database_url.parse(DATABASE_URL)
 
 }
 AUTH_PASSWORD_VALIDATORS = [
