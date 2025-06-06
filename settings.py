@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
-import dj_database_url
+import dj_database_url, os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -83,9 +83,9 @@ WSGI_APPLICATION = 'paymentservices.wsgi.application'
     }
 }
 """
+DATABASE_URL = os.environ.get('DATABAS_URL')
 DATABASES = {
-    'default':dj_database_url.parse("postgresql://projectmanager:uhmAMMHqdwSf3JMnpw1vEA8otAQNbiKE@dpg-d11d5dh5pdvs73escjr0-a.oregon-postgres.render.com/mmusdapaymentsystem")
-
+    'default':dj_database_url.parse(DATABASE_URL)
 }
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
