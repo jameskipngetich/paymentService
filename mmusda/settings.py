@@ -31,11 +31,11 @@ INSTALLED_APPS = [
 ]
 
 # M-Pesa Configuration
-MPESA_CONSUMER_KEY = os.getenv('MPESA_CONSUMER_KEY', 'your_test_consumer_key')
-MPESA_CONSUMER_SECRET = os.getenv('MPESA_CONSUMER_SECRET', 'your_test_consumer_secret')
-MPESA_PASSKEY = os.getenv('MPESA_PASSKEY', 'your_test_passkey')
-MPESA_PAYBILL = os.getenv('MPESA_PAYBILL', '509762')
-MPESA_CALLBACK_URL = os.getenv('MPESA_CALLBACK_URL', 'https://your-domain.com/api/mpesa/callback/')
+MPESA_CONSUMER_KEY = os.getenv('MPESA_CONSUMER_KEY')
+MPESA_CONSUMER_SECRET = os.getenv('MPESA_CONSUMER_SECRET')
+MPESA_PASSKEY = os.getenv('MPESA_PASSKEY')
+MPESA_PAYBILL = os.getenv('MPESA_PAYBILL')
+MPESA_CALLBACK_URL = os.getenv('MPESA_CALLBACK_URL')
 
 # For development, you can use these Safaricom sandbox credentials
 if DEBUG:
