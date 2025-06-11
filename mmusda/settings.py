@@ -38,12 +38,12 @@ MPESA_PAYBILL = os.getenv('MPESA_PAYBILL')
 MPESA_CALLBACK_URL = os.getenv('MPESA_CALLBACK_URL')
 
 # For development, you can use these Safaricom sandbox credentials
-if DEBUG:
+"""if DEBUG:
     MPESA_CONSUMER_KEY = '77bgGpmlOxlgJu6oEXhEgUgnu0j2WYxA'
     MPESA_CONSUMER_SECRET = 'viM8ejHgtEmtPTHd'
     MPESA_PASSKEY = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'
     MPESA_PAYBILL = '174379'  # Sandbox default business shortcode
-    MPESA_CALLBACK_URL = 'https://webhook.site/YOUR-UNIQUE-ID'  # Replace with your webhook.site URL
+    MPESA_CALLBACK_URL = 'https://webhook.site/YOUR-UNIQUE-ID'  # Replace with your webhook.site URL"""
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
